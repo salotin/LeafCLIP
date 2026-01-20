@@ -1,0 +1,1 @@
+This folder contains files obtained from training
