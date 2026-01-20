@@ -1,5 +1,4 @@
-# LeafCLIP: A Detection Method for the Lesion Areas of Outdoor Plants in Complex
-Lighting Scenarios
+# LeafCLIP: A Detection Method for the Lesion Areas of Outdoor Plants in Complex Lighting Scenarios
 
 **LeafCLIP** is a robust lesion-area detection framework designed for **outdoor plant images under complex field conditions**, where severe illumination changes (shadows), occlusion, and background clutter cause strong domain shift.
 
@@ -179,6 +178,7 @@ To test the LeafCLIP on the dataset:
 ```bash
 python  test.py --config_path config/plant.yaml  --checkpoint_path xxx.pkl
 ```
+
 
 
 
