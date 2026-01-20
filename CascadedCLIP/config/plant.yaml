@@ -1,0 +1,61 @@
+version: v1.0.0
+random_seed: 100
+
+data_root: data
+train_dataset: plant
+test_datasets: [plant]
+
+epoch: 200
+batch_size: 4
+
+print_freq_step: 10
+val_freq_epoch: 1
+
+image_size: 224
+model_name: ViT-L-14
+layers_out: [12,18,24]
+
+anomaly_tasks:
+  CutpasteTask: 0.25
+  GaussIntensityChangeTask: 0.25
+  SourceTask: 0.25
+  IdentityTask: 0.25
+
+
+prompt_maker: coop
+n_learnable_token: 8
+CSC: True
+class_token_positions: [end]
+
+save_root: results
+
+prompts:
+  normal: [
+    healthy leaf,
+    normal leaf surface,
+    disease-free leaf,
+    no visible symptoms,
+    no lesion on the leaf,
+    clean leaf texture,
+    uniform green leaf,
+    intact leaf tissue,
+    normal leaf appearance,
+    no spots or discoloration,
+    no abnormal pattern,
+    no damage on the leaf
+  ]
+
+  abnormal: [
+    diseased leaf,
+    infected leaf,
+    leaf lesion,
+    leaf with disease symptoms,
+    abnormal leaf surface,
+    leaf spot,
+    necrotic area on the leaf,
+    chlorosis on the leaf,
+    discolored leaf region,
+    mildew on the leaf,
+    rust symptom on the leaf,
+    blight symptom on the leaf
+  ]

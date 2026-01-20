@@ -1,0 +1,2 @@
+{"filename": "test/normal/example.jpg", "label": 0, "label_name": "normal", "clsname": "normal"}
+{"filename": "test/abnormal/00500.jpg", "label": 1, "label_name": "abnormal", "clsname": "abnormal", "mask": "test/ground_true/example.png"}
