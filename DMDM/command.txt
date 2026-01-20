@@ -1,0 +1,1 @@
+python shadow_infer.py  --ckpt experiments/example  --in_dir data/aistd_test/shadow  --mask_dir data/aistd_test/mask  --out_dir outputs  --ddim_steps 50
